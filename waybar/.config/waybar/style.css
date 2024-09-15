@@ -1,0 +1,60 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    min-height:0;
+    padding: 0;
+    margin: 0;
+}
+@define-color red #ffc94a;
+@define-color green #9EC8B9;
+@define-color blue #40A2D8;
+@define-color orange #F6995C;
+@define-color purple #BC7FCD;
+@define-color yellow #FFC94A; 
+@define-color grey #B0A695;
+
+window#waybar {
+    background-color: rgba(0,0,0,0.55);
+    padding: 0;
+    margin: 0;
+}
+/*
+#workspaces button.visible{
+  background: blue;
+  color:blue;
+}
+#workspaces button.inactive{
+  background: blue;
+  color:blue;
+}
+#workspace button.persistent{
+  background: blue;
+  color:blue;
+}
+
+ * */
+#workspaces button{
+  color: @blue;
+}
+#workspaces button.empty{
+  color: @grey;
+}
+#workspaces button.active{
+  background: transparent;
+  color:@yellow;
+}
+#clock {
+  padding:3px;
+  background:transparent;
+  color:@grey;
+}
+#battery {
+  padding:3px;
+  background:transparent;
+  color:@grey;
+}
+
+
+
+

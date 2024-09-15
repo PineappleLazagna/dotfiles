@@ -1,0 +1,61 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 5, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 0, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "battery","clock",
+  ],
+  // Modules configuration
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "icon-size":8,
+    "format-icons": {
+      "1":"",
+      "2":"󰴓",
+      "3":"",
+      "4":"",
+      "5":"󰴓",
+      "6":"",
+      "7":"",
+      "8":"",
+      "9":"󰖟",
+      "10":"󰖟"
+    },
+    "persistent-workspaces":{ 
+      "1":[], 
+      "2":[], 
+      "3":[], 
+      "4":[], 
+      "5":[], 
+      "6":[], 
+      "7":[], 
+      "8":[], 
+      "9":[], 
+      "10":[]
+    }
+  },
+  "clock": {
+      "format-alt": "{:%a, %d. %b  %H:%M}"
+  },
+  "battery": {
+  "states": {
+  "good": 95,
+  "warning": 30,
+  "critical": 15
+  },
+  "format": "{capacity}% {icon}",
+  "format-charging": "{capacity}% 🗲",
+  "format-plugged": "{capacity}% ",
+  "format-alt": "{time} {icon}",
+  // "format-good": "", // An empty format will hide the module
+  // "format-full": "",
+  "format-icons": ["", "", "", "", ""]
+  }
+},
